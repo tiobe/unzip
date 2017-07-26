@@ -1,4 +1,5 @@
-#!/usr/bin/perl
+package Unzip;
+
 # example perl code, this may not actually run without tweaking, especially on Windows
 
 use strict;
@@ -14,6 +15,8 @@ eg. they don't work on zip64 archive files.
 
 So, the following is code to actually use IO::Uncompress::Unzip to extract a zip file.
 
+Source: https://gist.github.com/eqhmcow/5389877
+
 =cut
 
 use File::Spec::Functions qw(splitpath);
@@ -22,7 +25,7 @@ use IO::Uncompress::Unzip qw($UnzipError);
 use File::Path qw(mkpath);
 
 # example code to call unzip:
-unzip(shift);
+#unzip(shift);
 
 =head2 unzip
 
