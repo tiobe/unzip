@@ -61,6 +61,7 @@ sub unzip {
             next;
         }
 
+        next unless $name;
         my $destfile = "$dest/$path/$name";
         my $buff;
         my $fh = IO::File->new($destfile, "w")
