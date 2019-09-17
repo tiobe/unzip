@@ -66,6 +66,8 @@ sub unzip {
         my $buff;
         my $fh = IO::File->new($destfile, "w")
             or die "Couldn't write to $destfile: $!";
+
+        $fh->binmode();
         while (($status = $u->read($buff)) > 0) {
             $fh->write($buff);
         }
