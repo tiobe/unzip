@@ -24,6 +24,8 @@ use IO::File;
 use IO::Uncompress::Unzip qw($UnzipError);
 use File::Path qw(mkpath);
 
+our $VERSION = '0.01';
+
 # example code to call unzip:
 #unzip(shift);
 
